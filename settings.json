@@ -1,0 +1,169 @@
+{
+    // =========================
+    // UI / WORKBENCH
+    // =========================
+    "workbench.colorTheme": "Catppuccin Mocha",
+    "workbench.iconTheme": "catppuccin-mocha",
+    "workbench.sideBar.location": "right",
+    "workbench.activityBar.location": "top",
+    "window.menuBarVisibility": "compact",
+    "window.zoomLevel": 1.5,
+    // =========================
+    // EXPLORER
+    // =========================
+    "explorer.confirmDelete": true,
+    "explorer.confirmDragAndDrop": true,
+    "explorer.confirmPasteNative": false,
+    "explorer.openEditors.visible": 1,
+    "explorer.sortOrder": "type",
+    "explorer.compactFolders": true,
+    "explorer.autoReveal": true,
+    "workbench.tree.indent": 14,
+    "workbench.tree.renderIndentGuides": "always",
+    "explorer.fileNesting.enabled": true,
+    "explorer.fileNesting.patterns": {
+        "pyproject.toml": "poetry.lock",
+        "requirements.txt": "requirements-dev.txt",
+        "Dockerfile": "docker-compose.yml",
+        "go.mod": "go.sum"
+    },
+    // =========================
+    // FILES
+    // =========================
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 1000,
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "files.encoding": "utf8",
+    "files.eol": "\n",
+    "files.exclude": {
+        "**/__pycache__": true,
+        "**/.venv": true,
+        "**/venv": true,
+        "**/.pytest_cache": true,
+        "**/.mypy_cache": true,
+        "**/node_modules": true,
+        "**/*.egg-info": true
+    },
+    "search.exclude": {
+        "**/__pycache__": true,
+        "**/.venv": true,
+        "**/venv": true,
+        "**/.pytest_cache": true,
+        "**/.mypy_cache": true,
+        "**/node_modules": true,
+        "**/*.egg-info": true
+    },
+    // =========================
+    // TYPOGRAPHY
+    // =========================
+    "editor.fontFamily": "JetBrains Mono",
+    "editor.fontSize": 16,
+    "editor.lineHeight": 1.5,
+    "editor.letterSpacing": 0.5,
+    "editor.fontLigatures": true,
+    "terminal.integrated.fontFamily": "JetBrains Mono",
+    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.lineHeight": 1.5,
+    "debug.console.fontFamily": "JetBrains Mono",
+    "scm.inputFontFamily": "JetBrains Mono",
+    "chat.editor.fontFamily": "JetBrains Mono",
+    // =========================
+    // EDITOR BEHAVIOR
+    // =========================
+    "editor.minimap.enabled": false,
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll": "explicit",
+        "source.organizeImports": "explicit"
+    },
+    "editor.guides.bracketPairs": true,
+    "editor.bracketPairColorization.enabled": true,
+    "editor.smoothScrolling": true,
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.renderWhitespace": "boundary",
+    // =========================
+    // NOTEBOOK
+    // =========================
+    "notebook.markup.fontFamily": "-apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif",
+    "notebook.output.fontFamily": "JetBrains Mono",
+    "notebook.output.fontSize": 16,
+    "notebook.output.lineHeight": 1.5,
+    "notebook.output.scrolling": true,
+    // =========================
+    // MARKDOWN
+    // =========================
+    "markdown.preview.fontFamily": "-apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif",
+    "markdown.preview.fontSize": 14,
+    "markdown.preview.lineHeight": 1.6,
+    // =========================
+    // PYTHON
+    // =========================
+    "python.analysis.typeCheckingMode": "standard",
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.inlayHints.variableTypes": true,
+    "python.analysis.inlayHints.functionReturnTypes": true,
+    "[python]": {
+        "editor.defaultFormatter": "charliermarsh.ruff"
+    },
+    // =========================
+    // GO
+    // =========================
+    "[go]": {
+        "editor.defaultFormatter": "golang.go",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit"
+        }
+    },
+    "go.useLanguageServer": true,
+    "go.toolsManagement.autoUpdate": true,
+    "go.formatTool": "goimports",
+    "go.lintTool": "golangci-lint",
+    "go.lintOnSave": "file",
+    "go.vetOnSave": "off",
+    "go.languageServerFlags": [
+        "-rpc.trace"
+    ],
+    "gopls": {
+        "analyses": {
+            "unusedparams": true,
+            "shadow": true
+        },
+        "staticcheck": true,
+        "usePlaceholders": true,
+        "completeUnimported": true
+    },
+    "go.testFlags": [
+        "-v"
+    ],
+    "go.coverOnSave": false,
+    "go.delveConfig": {
+        "dlvLoadConfig": {
+            "maxStringLen": 1024,
+            "maxArrayValues": 64
+        }
+    },
+    // =========================
+    // GIT
+    // =========================
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    // =========================
+    // COPILOT
+    // =========================
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false,
+        "python": true,
+        "go": true,
+        "shellscript": false
+    },
+    // =========================
+    // MISC
+    // =========================
+    "telemetry.feedback.enabled": false,
+    "github.copilot.nextEditSuggestions.enabled": false
+}
