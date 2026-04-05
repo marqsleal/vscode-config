@@ -57,17 +57,17 @@
     // =========================
     // TYPOGRAPHY
     // =========================
-    "editor.fontFamily": "JetBrains Mono",
+    "editor.fontFamily": "JetBrains Mono NL",
     "editor.fontSize": 16,
     "editor.lineHeight": 1.5,
     "editor.letterSpacing": 0.5,
     "editor.fontLigatures": true,
-    "terminal.integrated.fontFamily": "JetBrains Mono",
+    "terminal.integrated.fontFamily": "JetBrains Mono NL",
     "terminal.integrated.fontSize": 14,
     "terminal.integrated.lineHeight": 1.5,
-    "debug.console.fontFamily": "JetBrains Mono",
-    "scm.inputFontFamily": "JetBrains Mono",
-    "chat.editor.fontFamily": "JetBrains Mono",
+    "debug.console.fontFamily": "JetBrains Mono NL",
+    "scm.inputFontFamily": "JetBrains Mono NL",
+    "chat.editor.fontFamily": "JetBrains Mono NL",
     // =========================
     // EDITOR BEHAVIOR
     // =========================
@@ -86,7 +86,7 @@
     // NOTEBOOK
     // =========================
     "notebook.markup.fontFamily": "-apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif",
-    "notebook.output.fontFamily": "JetBrains Mono",
+    "notebook.output.fontFamily": "JetBrains Mono NL",
     "notebook.output.fontSize": 16,
     "notebook.output.lineHeight": 1.5,
     "notebook.output.scrolling": true,
@@ -165,5 +165,7 @@
     // MISC
     // =========================
     "telemetry.feedback.enabled": false,
-    "github.copilot.nextEditSuggestions.enabled": false
+    "github.copilot.nextEditSuggestions.enabled": false,
+    "gitlens.ai.model": "vscode",
+    "gitlens.ai.vscode.model": "copilot:gpt-4.1"
 }
